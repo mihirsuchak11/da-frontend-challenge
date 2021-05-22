@@ -1,0 +1,155 @@
+@import '../../../assets/scss/helper/color';
+
+.reset-button {
+  text-align: right;
+  margin-bottom: 10px;
+}
+
+table {
+  width: 100%;
+  table-layout: fixed;
+  border-collapse: collapse;
+  border-spacing: 0;
+
+  thead,
+  tbody,
+  tfoot,
+  tr,
+  td,
+  th {
+    border-color: $pattern-blue;
+    border-style: solid;
+    border-width: 0;
+  }
+
+  .song_name,
+  .album_name {
+    width: 20%;
+  }
+
+  .lyric_text {
+    width: 40%;
+  }
+
+  .action,
+  .vote {
+    width: 10%;
+  }
+
+  .table__header {
+    text-align: start;
+    border-bottom: 1px solid $pattern-blue;
+    position: relative;
+
+    &.not-sortable {
+      span {
+        &:before,
+        &:after {
+          content: none !important;
+        }
+      }
+    }
+
+    span {
+      padding: 15px;
+      display: block;
+      width: 100%;
+
+      &:before {
+        content: '';
+        display: block;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        margin-top: 8px;
+        margin-right: 9px;
+        border-width: 0 5px 5px;
+        border-color: transparent transparent $light-grey-color;
+        position: absolute;
+        right: 0;
+        top: 5px;
+      }
+
+      &:after {
+        content: '';
+        display: block;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        margin-top: 8px;
+        margin-right: 9px;
+        border-width: 5px 5px 0;
+        border-color: $light-grey-color transparent transparent;
+        position: absolute;
+        right: 0;
+        top: 15px;
+      }
+
+      &.asc {
+        &:before {
+          border-width: 0 5px 5px;
+          border-color: transparent transparent $yellow-color;
+        }
+      }
+      &.desc {
+        &:after {
+          border-width: 5px 5px 0;
+          border-color: $yellow-color transparent transparent;
+        }
+      }
+      &.asc,
+      &.desc {
+        &::before {
+          content: ' ';
+          display: block;
+          float: right;
+          width: 0;
+          height: 0;
+          border-style: solid;
+          margin-top: 8px;
+          margin-right: 9px;
+        }
+      }
+    }
+  }
+
+  thead {
+    border: 1px solid $pattern-blue;
+    background: $snow-color;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    user-select: none;
+
+    th {
+      font-weight: 700;
+      border: 1px solid $pattern-blue;
+      border-top: 0;
+      background: $snow-color;
+      border-bottom: 0;
+    }
+  }
+
+  tbody {
+    tr {
+      td {
+        padding: 15px;
+        border-left: none;
+        border: 1px solid $pattern-blue;
+        background: $white-color;
+      }
+    }
+
+    tr:nth-child(odd) {
+      td:first-child {
+        border-top: none;
+      }
+    }
+
+    tr:nth-child(even) {
+      td {
+        border-top: none;
+        background: $snow-color;
+      }
+    }
+  }
+}

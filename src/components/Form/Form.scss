@@ -1,0 +1,59 @@
+@import '../../assets/scss/helper/color.scss';
+
+.form-input {
+  border: 1px solid $light-grey-color;
+  padding: 12px 15px;
+  font-size: 15px;
+  display: block;
+  width: 100%;
+  letter-spacing: 0.4px;
+}
+
+.form-input-wrapper {
+  margin-bottom: 10px;
+  position: relative;
+  min-height: 77px;
+
+  label {
+    margin-bottom: 7px;
+    display: block;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    font-size: 14px;
+    color: $dark-grey-color;
+  }
+
+  .form-input.is-danger {
+    border: 1px solid $danger-color;
+  }
+
+  span.is-danger {
+    color: $danger-color;
+    margin-top: 5px;
+    display: block;
+    font-size: 14px;
+  }
+}
+
+textarea,
+input {
+  font-family: 'Roboto', sans-serif;
+}
+
+textarea:focus,
+input:focus {
+  outline: none;
+}
+
+::-webkit-input-placeholder {
+  color: $light-grey-color;
+}
+::-moz-placeholder {
+  color: $light-grey-color;
+}
+:-ms-input-placeholder {
+  color: $light-grey-color;
+}
+:-moz-placeholder {
+  color: $light-grey-color;
+}

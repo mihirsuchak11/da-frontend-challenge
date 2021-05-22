@@ -1,0 +1,80 @@
+@import '../../assets/scss/helper/_color.scss';
+
+.btn {
+  display: inline-block;
+  font-weight: 400;
+  line-height: 1.5;
+  color: $white-color;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+  cursor: pointer;
+  user-select: none;
+  background-color: transparent;
+  border: 1px solid transparent;
+  padding: 8px 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  transition: 0.3s all;
+}
+
+.btn-primary {
+  background-color: $primary-color;
+  border-color: $primary-color !important;
+  &:hover {
+    color: $primary-color;
+    background: transparent;
+    border: 1px solid $primary-color !important;
+  }
+  &.btn-disabled {
+    background-color: $light-grey-color;
+    border-color: $light-grey-color !important;
+  }
+}
+
+.btn-secondary {
+  color: $primary-color;
+  background: transparent;
+  border: 1px solid $primary-color !important;
+  &:hover {
+    color: $white-color;
+    background-color: $primary-color;
+    border-color: $primary-color !important;
+  }
+  &.btn-disabled {
+    color: $light-grey-color;
+    border-color: $light-grey-color !important;
+  }
+}
+
+.btn-icon {
+  padding: 0;
+  line-height: inherit;
+  font-size: 18px;
+  background: transparent;
+  color: $primary-color;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 0 none !important;
+
+  &:hover {
+    opacity: 1;
+    background: transparent;
+    border: 0 none !important;
+  }
+
+  &.btn-danger {
+    color: $danger-color;
+    opacity: 0.5;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+}
+
+.btn-disabled {
+  cursor: not-allowed;
+  pointer-events: none;
+}

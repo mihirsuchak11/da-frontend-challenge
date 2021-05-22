@@ -1,46 +1,50 @@
-# Getting Started with Create React App
+# Songs List - by Mihir Suchak
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+- Project: Songs List
+- Language/Frameworks: _Typescript(with React) + SCSS_
 
-## Available Scripts
+#### Desktop View: Songs List
+![All the Projects under screenshot](./Screenshot-1.png)
+#### Desktop View: Add Song
+![All the Projects under the screenshot](./Screenshot-1.png)
+
+## Howdy! 👋
+
+Hey there, this is Mihir Suchak.
+## Features Implemented as MVP
+
+- If there is no data then will show no data found error.
+- To keep code organized and error-free I did setup locally eslint and prettier.
+- Implemented smooth Skelton animation loader.
+- Used SCSS so styles can be manged easily.
+- Before deleing the song, added confirm dialog box to ask the confirmation.
+- User can search and sort individual column, also added reset function so in one go user can reset all the filters.
+
+## Possible Enhancements
+
+- [UI] There is always scope for improvements of design.
+- [UI] I did not spend time to make it responsive so we can do that too.
+- [TECH] We can use more utility classes using bootstrap or making our own with a tailwind.
+- [TECH] Instead of normal scss we can use the .modules pattern for local components.
+- [TECH] We can use a custom error boundary component.
+- [TECH] In the real project we can use more detailed meta tags, roboto.txt and sitemap to improve SEO.
+- [TECH] Show tooltip while toggling vote and upvote.
+
+## Setup & Development
+
+### Prerequisite
+- Make sure you have `node` installed -- recommended `15.6.0`.
+- Once you have a `node` installed, run `npm install` in this repo to get your dependencies.
+- Make sure you have install json-server globally, you can download from [here](https://www.npmjs.com/package/json-server).
+-  Once you have a installed json-server, run `npm run server` in terminal, it'll start server in port 8000 and keep this open in one terminal.
+- In another terminal run `npm start` app will start on 3000 port.
 
 In the project directory, you can run:
 
-### `npm start`
+### Description / Data Flow / Approach
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app). Reason: wanted to move quickly since this structure will give me the minimum things I'd need to create an MVP.
+- Used scss variables for colors so anytime it can be changed from the one place and it'll reflect at respective places.
+- Implemented custom component so we can reuse it anywhere like Button, Table, Input, etc.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+Thank you!

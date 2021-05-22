@@ -1,0 +1,53 @@
+@import '../../assets/scss/helper/color';
+
+.no_data {
+  width: 500px;
+  margin: 40px auto;
+  border-radius: 5px;
+
+  &__content {
+    padding: 48px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    &_icon {
+      width: 200px;
+      height: 200px;
+      display: flex;
+      align-items: center;
+      border-radius: 200px;
+      justify-content: center;
+      background-color: $white-smoke-color;
+      box-shadow: 0px 2px 1px $white-smoke-color;
+
+      img {
+        width: 170px;
+      }
+    }
+
+    &_message {
+      color: $black-color;
+      font-size: 22px;
+      font-weight: 700;
+      margin: 15px 0;
+    }
+
+    &_help {
+      color: $black-color;
+      font-size: 15px;
+      a {
+        font-weight: 700;
+        text-decoration: none;
+        color: $primary-color;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .no-data-wrapper {
+    width: 100%;
+    margin: 0;
+  }
+}

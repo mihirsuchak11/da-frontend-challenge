@@ -1,0 +1,49 @@
+@import './helper/reset.scss';
+@import './helper/color';
+@import './helper/typography';
+@import '../../components/Form/Form.scss';
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  background-color: $white-smoke-color;
+  font-family: 'Roboto', sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+.container {
+  max-width: 1180px;
+  margin: 0 auto;
+}
+
+.page-wrapper {
+  padding: 20px;
+}
+
+// Utility classes
+.d-flex {
+  display: flex;
+}
+
+.justify-content-between {
+  justify-content: space-between;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.text-grey {
+  color: $dark-grey-color;
+}
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 100%;
+  }
+}

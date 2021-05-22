@@ -1,0 +1,43 @@
+@import '../../assets/scss/helper/color';
+
+.pagination {
+  display: flex;
+  justify-content: flex-end;
+
+  &__item {
+    span {
+      display: inline-block;
+      min-width: 1.5em;
+      padding: 0.5em 1em;
+      border: 1px solid $white-smoke-color;
+      border-radius: 0 !important;
+      cursor: pointer;
+    }
+
+    &:first-child {
+      span {
+        border-radius: 5px 0 0 5px !important;
+      }
+    }
+
+    &:last-child {
+      span {
+        border-radius: 0 5px 5px 0 !important;
+      }
+    }
+
+    &.disabled {
+      span {
+        cursor: not-allowed;
+        pointer-events: none;
+      }
+    }
+  }
+
+  &__page-info {
+    display: flex;
+    align-items: center;
+    margin: 0 20px;
+    height: 34px;
+  }
+}

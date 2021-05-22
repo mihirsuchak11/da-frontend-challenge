@@ -1,0 +1,43 @@
+@import '../../assets/scss/helper/color';
+
+.navbar {
+  margin-top: 0;
+  background: $white-color;
+  line-height: normal;
+  height: 65px;
+  box-shadow: 0 0 20px rgba(8, 21, 66, 0.05);
+
+  &__content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 1140px; // Kept 40px less than overall container
+    margin: 0 auto;
+    height: 100%;
+  }
+
+  .logo {
+    color: $primary-color;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+  }
+
+  .links {
+    margin-left: auto;
+
+    a {
+      letter-spacing: 1.5px;
+      transition: all 0.3s ease;
+      color: $black-color;
+      font-size: 16px;
+      padding: 15px 12px;
+      text-decoration: none;
+
+      &.active,
+      &:hover {
+        color: $primary-color;
+      }
+    }
+  }
+}

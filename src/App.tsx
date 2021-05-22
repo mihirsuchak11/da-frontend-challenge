@@ -1,26 +1,22 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+import './assets/scss/global.scss';
+import Navbar from './components/Navbar/Navbar';
+import Routes from './routes/';
 
-function App() {
+const App: React.FC = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Navbar />
+      {/* Global configuration for the toast container */}
+      <ToastContainer position='top-center' />
+      <div className='container'>
+        <div className='page-wrapper'>
+          <Routes />
+        </div>
+      </div>
+    </>
   );
-}
-
+};
 export default App;
