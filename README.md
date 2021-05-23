@@ -35,7 +35,7 @@ Hey there, this is Mihir Suchak.
 ### Prerequisite
 - Make sure you have `node` installed -- recommended `15.6.0`.
 - Once you have a `node` installed, run `npm install` in this repo to get your dependencies.
-- Make sure you have install json-server globally, you can download from [here](https://www.npmjs.com/package/json-server).
+- Make sure you have install json-server globally, you can download from [here](https://www.npmjs.com/package/json-server) or run this command `npm install -g json-server`.
 -  Once you have a installed json-server, run `npm run server` in terminal, it'll start server in port 8000 and keep this open in one terminal.
 - In another terminal run `npm start` app will start on 3000 port.
 
